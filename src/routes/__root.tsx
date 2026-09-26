@@ -83,7 +83,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "24/7 emergency & healthcare service in Tissamaharama, Sri Lanka." },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "stylesheet", href: appCss }],
+    links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/olympus_logo.jfif", type: "image/jpeg" },
+    ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(jsonLd) },
     ],
