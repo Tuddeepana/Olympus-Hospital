@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { SITE } from "@/lib/site";
-import logo from "@/assets/logo.png";
 
 export function Footer() {
   return (
@@ -9,7 +8,7 @@ export function Footer() {
       <div className="container-x py-14 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <img src={logo} alt="Olympus Lanka Hospital" className="h-10 w-10 bg-white rounded-lg p-1" width={40} height={40} />
+            <img src="/olympus_logo.jfif" alt="Olympus Lanka Hospital" className="h-10 w-10 bg-white rounded-lg p-1" width={40} height={40} />
             <div>
               <div className="font-bold">Olympus Lanka Hospital</div>
               <div className="text-xs opacity-80">Caring for Life · Since 2022</div>

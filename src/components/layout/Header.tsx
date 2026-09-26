@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
-import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { SITE } from "@/lib/site";
 
@@ -19,7 +18,7 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full border-b border-border bg-background/85 backdrop-blur">
       <div className="container-x flex h-16 items-center justify-between gap-4">
         <Link to="/" className="flex items-center gap-2 min-w-0">
-          <img src={logo} alt="Olympus Lanka Hospital logo" className="h-10 w-10 shrink-0" width={40} height={40} />
+          <img src="/olympus_logo.jfif" alt="Olympus Lanka Hospital logo" className="h-10 w-10 shrink-0" width={40} height={40} />
           <div className="min-w-0 leading-tight">
             <div className="truncate font-bold text-brand">Olympus Lanka</div>
             <div className="truncate text-xs text-muted-foreground">Hospital · Tissamaharama</div>
