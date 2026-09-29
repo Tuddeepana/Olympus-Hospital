@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  useRouterState,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
@@ -113,9 +114,19 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const isLoading = useRouterState({ select: (state) => state.isLoading });
   return (
     <QueryClientProvider client={queryClient}>
       <div className="flex min-h-screen flex-col">
+        <div
+          className={`route-loading ${isLoading ? "route-loading-visible" : ""}`}
+          aria-hidden={!isLoading}
+        >
+          <div className="route-loading-mark">
+            <img src="/olympus_logo.jfif" alt="" className="route-loading-logo" width={72} height={72} />
+            <span className="route-loading-line" />
+          </div>
+        </div>
         <Header />
         <main className="flex-1">
           <Outlet />
