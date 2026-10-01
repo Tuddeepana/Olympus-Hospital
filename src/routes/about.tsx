@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { HeartHandshake, Eye, Target, Sparkles, ShieldCheck, Lightbulb, Award } from "lucide-react";
+import { OpeningGalleryCard } from "@/components/OpeningGalleryCard";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -46,6 +47,12 @@ function AboutPage() {
               Our team is committed to dignity, safety and clinical excellence. Whether you visit us for a routine check-up or in an emergency, you can expect prompt, professional and compassionate care.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container-x">
+          <OpeningGalleryCard />
         </div>
       </section>
 

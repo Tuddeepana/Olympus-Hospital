@@ -6,6 +6,7 @@ import {
 import { Hero } from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { BookingDialog } from "@/components/BookingDialog";
+import { OpeningGalleryCard } from "@/components/OpeningGalleryCard";
 import { SERVICES } from "@/lib/services";
 import { SITE, waLink } from "@/lib/site";
 
@@ -83,6 +84,13 @@ function HomePage() {
           <div className="card-soft p-2 overflow-hidden">
             <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1200&q=80" alt="Hospital interior" className="rounded-xl w-full h-[360px] object-cover" loading="lazy" width={1200} height={720} />
           </div>
+        </div>
+      </section>
+
+      {/* Opening Photos Gallery Card */}
+      <section className="section bg-background">
+        <div className="container-x">
+          <OpeningGalleryCard />
         </div>
       </section>
 
