@@ -9,7 +9,7 @@ export const SITE = {
     postal: "82600",
     country: "Sri Lanka",
   },
-  phones: ["07777 88080", "071 44 00000", "047 2259 0000", "047 32 00000"],
+  phones: ["07777 88080", "071 44 00000", "047 2259 000", "047 32 00000"],
   whatsapp: "+94777788080",
   whatsappDisplay: "+94 77 778 8080",
   email: "contact@olympuslankahospital.com",
