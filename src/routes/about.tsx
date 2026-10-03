@@ -39,12 +39,9 @@ function AboutPage() {
         <div className="container-x grid gap-10 lg:grid-cols-2 items-center">
           <img src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&fit=crop&w=1200&q=80" alt="Modern hospital ward" className="rounded-2xl shadow-soft w-full h-[420px] object-cover" loading="lazy" width={1200} height={840} />
           <div>
-            <h2 className="text-3xl font-bold">Excellence in healthcare, every day.</h2>
+            <h2 className="text-3xl font-bold">A great place for medical hospital center &amp; health care</h2>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Olympus Lanka Hospital combines experienced clinicians, modern diagnostic equipment and patient-first processes to deliver high-quality medical care 24 hours a day. From emergency response and OPD consultations to specialist clinics, X-ray imaging, laboratory testing and a full pharmacy — we're built for the needs of our community.
-            </p>
-            <p className="mt-3 text-muted-foreground leading-relaxed">
-              Our team is committed to dignity, safety and clinical excellence. Whether you visit us for a routine check-up or in an emergency, you can expect prompt, professional and compassionate care.
+              Welcome to Olympus Lanka Hospital Pvt Ltd, which is established on 2022 at Debarawewa. We are committed to provide excellent service that transcends conventional healthcare in a pleasant environment. Our hospital is well equipied modern that make use of the latest technological advancements to ensure your comfort as well as the best clinical outcome. Our team is dedicated for you and your loved ones good health.
             </p>
           </div>
         </div>
@@ -62,14 +59,14 @@ function AboutPage() {
             <Target className="h-9 w-9 text-emergency" />
             <h3 className="mt-4 text-2xl font-bold">Our Mission</h3>
             <p className="mt-2 text-muted-foreground leading-relaxed">
-              Provide access to affordable world-class healthcare services and enrich lives.
+              Our mission is to provide access to affordable world class services and contribute to enriching lives of people.
             </p>
           </div>
           <div className="card-soft p-8">
             <Eye className="h-9 w-9 text-brand" />
             <h3 className="mt-4 text-2xl font-bold">Our Vision</h3>
             <p className="mt-2 text-muted-foreground leading-relaxed">
-              To be the most respected healthcare provider in the Southern Province of Sri Lanka.
+              Our vision is to be the most respected healthcare provider in southern province.
             </p>
           </div>
         </div>
