@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { HeartHandshake, Eye, Target, Sparkles, ShieldCheck, Lightbulb, Award } from "lucide-react";
-import { OpeningGalleryCard } from "@/components/OpeningGalleryCard";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -47,11 +46,6 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container-x">
-          <OpeningGalleryCard />
-        </div>
-      </section>
 
       <section className="section bg-secondary">
         <div className="container-x grid gap-6 md:grid-cols-2">
