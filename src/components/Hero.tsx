@@ -6,15 +6,21 @@ import { SITE, waLink } from "@/lib/site";
 export function Hero() {
   return (
     <section className="relative h-[78vh] min-h-[520px] w-full overflow-hidden">
-      <img
-        src="/Welcoming Tropical Hospital Facade.webp"
-        alt="Olympus Lanka Hospital facade — modern healthcare in Tissamaharama"
-        width={1920}
-        height={1080}
-        className="absolute inset-0 h-full w-full object-cover"
-        loading="eager"
-        fetchPriority="high"
-      />
+      <picture className="absolute inset-0 block h-full w-full">
+        <source
+          media="(max-width: 768px)"
+          srcSet="/olympus-hospital-mobile-hero.webp"
+        />
+        <img
+          src="/Welcoming Tropical Hospital Facade.webp"
+          alt="Olympus Lanka Hospital facade — modern healthcare in Tissamaharama"
+          width={1920}
+          height={1080}
+          className="h-full w-full object-cover"
+          loading="eager"
+          fetchPriority="high"
+        />
+      </picture>
       <div className="absolute inset-0 glass-overlay" />
       <div className="relative z-10 container-x flex h-full flex-col justify-center text-white">
         <span className="inline-flex w-fit items-center gap-2 rounded-full bg-emergency px-3 py-1 text-xs font-semibold uppercase tracking-wider animate-fade-up">
