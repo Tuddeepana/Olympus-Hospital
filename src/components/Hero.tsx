@@ -1,35 +1,20 @@
-import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Phone, MessageCircle, CalendarCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE, waLink } from "@/lib/site";
-import hero1 from "@/assets/hero-hospital.jpg";
-import hero2 from "@/assets/hero-doctors.jpg";
-import hero3 from "@/assets/hero-emergency.jpg";
-
-const slides = [hero1, hero2, hero3];
 
 export function Hero() {
-  const [i, setI] = useState(0);
-  useEffect(() => {
-    const t = setInterval(() => setI((v) => (v + 1) % slides.length), 5000);
-    return () => clearInterval(t);
-  }, []);
-
   return (
     <section className="relative h-[78vh] min-h-[520px] w-full overflow-hidden">
-      {slides.map((src, idx) => (
-        <img
-          key={src}
-          src={src}
-          alt="Olympus Lanka Hospital — modern healthcare in Tissamaharama"
-          width={1920}
-          height={1080}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${idx === i ? "opacity-100" : "opacity-0"}`}
-          loading={idx === 0 ? "eager" : "lazy"}
-          fetchPriority={idx === 0 ? "high" : "auto"}
-        />
-      ))}
+      <img
+        src="/Welcoming Tropical Hospital Facade.webp"
+        alt="Olympus Lanka Hospital facade — modern healthcare in Tissamaharama"
+        width={1920}
+        height={1080}
+        className="absolute inset-0 h-full w-full object-cover"
+        loading="eager"
+        fetchPriority="high"
+      />
       <div className="absolute inset-0 glass-overlay" />
       <div className="relative z-10 container-x flex h-full flex-col justify-center text-white">
         <span className="inline-flex w-fit items-center gap-2 rounded-full bg-emergency px-3 py-1 text-xs font-semibold uppercase tracking-wider animate-fade-up">
@@ -60,16 +45,6 @@ export function Hero() {
               <MessageCircle className="h-5 w-5" /> WhatsApp Us
             </Button>
           </a>
-        </div>
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-          {slides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setI(idx)}
-              aria-label={`Slide ${idx + 1}`}
-              className={`h-2 rounded-full transition-all ${idx === i ? "w-8 bg-white" : "w-2 bg-white/50"}`}
-            />
-          ))}
         </div>
       </div>
     </section>
